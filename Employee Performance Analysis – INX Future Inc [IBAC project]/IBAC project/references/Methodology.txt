@@ -1,0 +1,48 @@
+                       Project Methodology
+
+1. Problem Understanding:
+The objective of this project is to analyze employee-related data and predict employee performance ratings. The goal is to identify key factors influencing performance and provide data-driven insights to support HR decision-making.
+
+2. Data Collection:
+The dataset used for this project is the INX Future Inc Employee Performance dataset, which contains demographic, work-related, and performance-related attributes of employees.
+
+3. Data Preprocessing:
+- Checked and confirmed absence of missing values
+- Encoded categorical variables using Label Encoding
+- Detected and handled outliers using the IQR method
+- Scaled numerical features using StandardScaler
+- Split data into training and testing sets
+- Handled class imbalance using SMOTE on training data
+
+4. Exploratory Data Analysis (EDA):
+- Performed univariate and bivariate analysis
+- Visualized performance distribution across departments
+- Analyzed experience vs performance
+- Used boxplots, count plots, and correlation matrix to understand patterns
+
+5. Feature Selection:
+- Applied tree-based feature importance using Random Forest
+- Selected top influencing features for final model training
+- PCA was applied only for comparison and not used in the final model
+
+6. Model Building:
+The following machine learning models were trained:
+- Logistic Regression (baseline model)
+- Gradient Boosting Classifier
+- Random Forest Classifier
+
+7. Model Evaluation:
+Models were evaluated using:
+- Accuracy
+- Precision, Recall, and F1-score
+- Confusion Matrix
+
+8. Model Selection:
+Random Forest was selected as the final model due to its superior accuracy and balanced performance across all classes.
+
+9. Business Insights:
+Key drivers of employee performance include salary hike percentage, work environment satisfaction, and timely promotions.
+
+10. Conclusion:
+The final model can be used to support data-driven HR decisions such as performance evaluation, promotions, and training interventions.
+
